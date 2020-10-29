@@ -68,5 +68,5 @@ $preference->auto_return = "approved";
 
 $preference->save();
 
-
+header('Location: ' . $preference->init_point);
 ?>
