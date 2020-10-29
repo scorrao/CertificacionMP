@@ -1,0 +1,1 @@
+El pago ha sido “rechazado” o no ha finalizado

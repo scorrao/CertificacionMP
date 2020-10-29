@@ -1,0 +1,12 @@
+{
+    "id": 0,
+    "live_mode": false,
+    "type": "payment",
+    "date_created": "2020-10-25T22:52:42Z",
+    "application_id": 0,
+    "user_id": 415043123,
+    "action": "payment.created",
+    "data": {
+        "id": 1230119495
+    }
+}

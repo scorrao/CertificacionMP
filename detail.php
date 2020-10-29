@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+    <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
     <meta name="viewport" content="width=1024">
     <title>Tienda e-commerce</title>
 
@@ -130,7 +130,12 @@
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <form action="pagar.php">
+                                        <input type="hidden" name="price" value="<?php echo $_POST['price'] ?>">
+                                        <input type="hidden" name="unit" value="<?php echo $_POST['unit'] ?>">
+                                        <input type="hidden" name="title" value="<?php echo $_POST['title'] ?>">
+                                        <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
